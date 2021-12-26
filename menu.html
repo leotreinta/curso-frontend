@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navbar</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<nav>
+		<button class="nav-boton" onclick="accion()">menu</button>
+		<a href="" class="NAV-ENLACE desaparece">INICIO</a>
+		<a href="" class="NAV-ENLACE desaparece">NOSOTROS</a>
+		<a href="" class="NAV-ENLACE desaparece"> SERVICIOS</a>
+		<a href="" class="NAV-ENLACE desaparece">CONTACTO</a>
+
+
+
+
+
+
+	</nav>
+	<script> 
+		function accion (){
+			/*----------el ciclo for recorre los elementos y coloca la clase desaparece en cada una de ellas al precionar click como tambien la quita cada vez que se preciona  ----------*/
+			
+			console.log('esta funcionando')
+			var ancla= document.getElementsByClassName('NAV-ENLACE');
+			for(var i =0; i< ancla.length; i++){
+					ancla[i].classList.toggle('desaparece');
+			}
+		}
+
+
+	</script>
+
+
+</body>
+</html>

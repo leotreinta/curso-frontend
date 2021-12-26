@@ -1,0 +1,201 @@
+nav{
+background: blueviolet;
+padding: 20px;
+display: flex;
+justify-content: space-around;
+}
+.container{
+margin: 0 auto;
+width:90%;
+
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+h2{
+font-weight: 300;
+
+}
+
+p{
+font-weight: 300;
+
+}
+
+.flex{
+display: inline-flex;
+flex-wrap: wrap;
+
+
+}
+
+.text-center{
+	text-align: center;
+}
+
+.precio{
+	font-size: 50px;
+	color: #00dac7;
+}
+.container{
+	justify-content: center;
+}
+
+
+.columna{
+	<!--==================================================================
+	=          boderadius funciona para redondear columnas             =
+	===================================================================-->
+	
+	
+	
+	<!--====  End oboderadius funciona para redondear columnas   ====-->
+	
+background: rgb(228, 228, 228);
+color: #333;
+border: 1px solid #333;
+margin: 0 auto;
+padding: 10px;
+border-radius: 20px;
+box-shadow:10px 10px 5px #888 ;
+width: 23%;
+box-sizing: border-box;
+}
+
+
+
+.btn-precio{
+background: salmon;
+display: block;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+
+.btn-precio:hover{
+	background: slategray;
+}
+
+
+/*.columna{
+background: pink;
+color: black;
+padding: 20px;
+width: 25%;
+margin: 10px;
+}
+.padre{
+	/*----------atributo display "flex " funciona para organizar en columnas ----------
+	 
+display: flex;
+padding: 10px;
+}*/
+
+/* button{
+ background: violet;
+ color: blue;
+}*/
+
+/*button:hover{
+	---------hover se usa para animacion que ocurre cuando cabia de color el button al pasar el mause   ----------
+	
+background: orange;
+
+}*/
+
+/*button:active{
+	/*----------esto hace que cuando de click cabie color de  fondo  ----------
+	
+background: red;
+} 
+*/
+
+h1{   <!--=======================================================================
+=            transformar un elemento de bloque a uno de linea "dispaly"            =
+========================================================================-->
+
+
+
+<!--====  End of transformar un elemento de bloque a uno de linea "dispaly"  ====-->
+
+
+	background: salmon;
+	display: inline-block;
+}
+
+a{/*----------  transformar un elemento de linea a uno de bloque   ----------*/
+
+	background: blue;
+	display: block;
+
+
+}
+
+.NAV-ENLACE{
+	display: inline-block;
+	background: salmon;
+	color: whitesmoke;
+	padding: 10px 30px;
+	text-decoration: none;
+
+
+}
+
+
+.NAV-ENLACE:hover{
+	background: red;
+	padding: 10px;
+
+}
+
+.nav-boton{
+	/*---------- el parametro boder indica grosor linea , tipo de linea y color . display none desaparece el boton ----------*/
+	
+background: salmon;
+color: #fff;
+padding: 10px 0;
+border: 2px solid #fff ;
+display: none;
+}
+
+@media (max-width: 600px) {
+  nav{
+  	/* flex-direction funciona para colocar en columnas el nav */
+  	
+  	background: blue;
+  	flex-direction: column;
+
+  }
+  .columna{
+
+ 			width: 100%;
+ 			margin-bottom: 20px;
+ 		}
+.NAV-ENLACE{
+margin: 10px 0;
+
+}
+.nav-boton{
+	display: inline-block;
+}
+
+.desaparece{
+	display: none;
+
+}
+}
+
+
+@media (max-width: 1070px) {
+ 		.columna{
+
+ 			width: 45%;
+ 			margin-bottom: 20px;
+ 		}
+
+  }
